@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="profile-card">
+    <div class="card-header">
+      <i class='bx bx-arrow-back'></i>
+      <div class="menu-icon">
+        <i class='bx bx-dots-vertical-rounded'></i>
+      </div>
+    </div>
+    <div class="profile-pic">
+      <img src="https://assets.manutd.com/AssetPicker/images/0/0/10/126/687707/Legends-Profile_Cristiano-Ronaldo1523460877263.jpg" alt="Profile Picture">
+    </div>
+    <h2>Cristiano Ronaldo</h2>
+    <p>Professional Footballer</p>
+    <div class="social-icons">
+      <a class='bx bxl-twitter' href="https://x.com/"></a>
+      <a class='bx bxl-instagram' href="https://instagram.com/"></a>
+      <a class='bx bxl-youtube' href="https://youtube.com/"></a>
+    </div>
+    <div class="action-buttons">
+      <button class="message">Message</button>
+      <button class="subscribe" id="subscribeBtn">Siuuuubscribe</button>
+    </div>
+    <div class="stats">
+      <div><i class='bx bx-heart'></i></div>
+      <div><i class='bx bx-chat'></i></div>
+      <div><i class='bx bx-show'></i></div>
+    </div>
+  </div>
+
+  <audio id="subscribeSound" preload="auto" src="ronaldo-siuuuu.mp3"></audio>
+
+  <script>
+    // JavaScript to play sound on button click
+    document.getElementById('subscribeBtn').addEventListener('click', function() {
+      var audio = document.getElementById('subscribeSound');
+      audio.play();
+    });
+  </script>
+
+</body>
+</html>
